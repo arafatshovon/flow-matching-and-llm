@@ -4,3 +4,5 @@ torch
 tokenizers
 matplotlib
 seaborn
+celluloid
+scikit-learn
