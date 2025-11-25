@@ -1,5 +1,0 @@
-embed_dim: 40
-gamma: 0.5
-in_channel: 1
-lr: 0.001
-step_size: 200
