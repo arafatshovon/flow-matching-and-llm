@@ -1,3 +1,5 @@
 *env
 data/
 *.mp4
+**.ckpt
+**.log
