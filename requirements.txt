@@ -1,1 +1,10 @@
 ipykernel
+datasets
+torch
+tokenizers
+matplotlib
+seaborn
+celluloid
+scikit-learn
+opencv-python
+pytorch-lightning
