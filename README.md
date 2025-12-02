@@ -18,11 +18,11 @@ Flow Matching is an alternative to diffusion models that learns to transport sam
 
 The model successfully generates diverse handwritten digits after training. Below are samples generated using the trained flow matching model:
 
-### Digits 0-4
-![Generated samples for digits 0-4](notebooks/0-4.png)
 
-### Digits 5-9
-![Generated samples for digits 5-9](notebooks/5-9.png)
+| **Digits 0-4** | **Digits 5-9** |
+|:--------------:|:--------------:|
+| ![Generated samples for digits 0-4](notebooks/0-4.png) | ![Generated samples for digits 5-9](notebooks/5-9.png) |
+
 
 Each row shows 5 different samples generated for the corresponding digit class, demonstrating the model's ability to capture style variations while maintaining digit identity.
 
