@@ -31,19 +31,19 @@ Each row shows 5 different samples generated for the corresponding digit class, 
 ```
 .
 ├── notebooks/
-│   ├── Flow_Matching.ipynb    # Main flow matching implementation & training
-│   ├── 0-4.png                # Generated samples (digits 0-4)
-│   └── 5-9.png                # Generated samples (digits 5-9)
+│   ├── Flow_Matching.ipynb
+│   ├── 0-4.png                
+│   └── 5-9.png                
 ├── scripts/
-│   ├── model.py               # Transformer architecture (for translation)
-│   ├── dataset.py             # Dataset utilities
-│   ├── train.py               # Training script
-│   └── train_tokenizer.py     # Tokenizer training
+│   ├── model.py               
+│   ├── dataset.py             
+│   ├── train.py              
+│   └── train_tokenizer.py     
 ├── data/
-│   ├── Images(28x28).npy      # Training images
-│   └── *.ckpt                 # Model checkpoints
-├── requirements.txt           # Python dependencies
-└── train.sh                   # Training execution script
+│   ├── Images(28x28).npy     
+│   └── *.ckpt                 
+├── requirements.txt          
+└── train.sh                
 ```
 
 ## How Flow Matching Works
@@ -87,11 +87,11 @@ Or execute via script:
 
 After training, load the checkpoint and generate samples:
 ```python
-# Load trained model
+
 model.load_state_dict(torch.load('data/unguided_model_epoch=51.ckpt'))
 
-# Generate samples for a specific digit class
-samples = model.sample(num_samples=25, class_label=3)
+x_0 = torch.randn(num_samples, 1, height, width)
+samples = model.sample(x_0, label, num_samples=25)
 ```
 
 ## Model Architecture
@@ -114,6 +114,7 @@ The velocity field network uses a **UNet architecture** with:
 - [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) - Lipman et al., 2022
 - [Rectified Flow](https://arxiv.org/abs/2209.03003) - Liu et al., 2022
 - [Conditional Flow Matching](https://arxiv.org/abs/2302.00482) - Tong et al., 2023
+- [diffusion.csail.mit.edu](https://diffusion.csail.mit.edu/2025/index.html)
 
 ## License
 
