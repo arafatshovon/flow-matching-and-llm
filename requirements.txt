@@ -8,3 +8,4 @@ celluloid
 scikit-learn
 opencv-python
 pytorch-lightning
+transformers
