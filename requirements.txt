@@ -9,3 +9,5 @@ scikit-learn
 opencv-python
 pytorch-lightning
 transformers
+accelerate
+bitsandbytes
