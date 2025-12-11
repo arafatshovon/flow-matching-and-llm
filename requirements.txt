@@ -11,3 +11,6 @@ pytorch-lightning
 transformers
 accelerate
 bitsandbytes
+evaluate
+nltk
+rouge-score
